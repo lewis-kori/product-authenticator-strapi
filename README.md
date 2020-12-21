@@ -1,5 +1,18 @@
 # Product authenticator backend
 
+## setup
+
+have node.js > v12.x installed
+
+run `yarn install`
+
+after dependencies have been installed
+create a .env file and populate it with relevant info from the `.env.example`
+
+finally, run
+
+`yarn develop`
+
 ## auth endpoints
 
 ### register user
@@ -25,7 +38,7 @@ keys are
 
 expected results are:
 
-    ```JSON
+    ```
     {
         "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjA4NDk0ODA4LCJleHAiOjE2MTEwODY4MDh9.C-KgKYQcwZvAY4gigyB0-kU7B26Zy6fRe3eh4YU2z7U",
         "user": {
